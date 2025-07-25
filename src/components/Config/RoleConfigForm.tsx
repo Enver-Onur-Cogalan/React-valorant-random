@@ -86,6 +86,14 @@ export default function RoleConfigForm() {
                 Flex (random): <strong>{Math.max(flex, 0)}</strong>
             </p>
 
+            <label className={styles.toggle}>
+                <input
+                    type="checkbox"
+                    checked={randomAgents}
+                    onChange={(e) => setRandomAgents(e.target.checked)}
+                />
+                Troll picks (roles don't matter)
+            </label>
 
             {flex < 0 && <p className={styles.error}>You have exceeded the total number of players!</p>}
 
