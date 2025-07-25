@@ -1,12 +1,72 @@
-# React + Vite
+# 🎯 Valorant Draft Wheel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Generate fair, role‑balanced Valorant teams in seconds – with slick animations and full customisation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Why?
 
-## Expanding the ESLint configuration
+When you gather friends for a quick Valorant match, picking roles & agents can take longer than the actual game. **Valorant Draft Wheel** lets you:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* pick *any* team size (3‑10 players)
+* decide exact **role quotas** ("2 Duelists, 1 Initiator… the rest Flex")
+* optionally assign **totally random agents** – or keep agents role‑restricted
+* watch a stylish spinning loader, then view the final roster in animated cards
+
+All logic runs client‑side – no accounts, no servers, no waiting.
+
+---
+
+## 🛠️ Tech Stack
+
+| Area         | Lib / Tool                            | Notes                           |
+| ------------ | ------------------------------------- | ------------------------------- |
+| UI framework | **React 18 + Vite**                   | blazing‑fast dev server         |
+| State        | **Zustand**                           | tiny, hook‑based store          |
+| Animations   | **Framer Motion 10**                  | loader spin + scene transitions |
+| Styling      | **CSS Modules**                       | fully refactored; zero Tailwind |
+| Utility      | Custom `shuffle & uniquePick` helpers | repeat‑safe randomisation       |
+| Language     | TypeScript                            | end‑to‑end type‑safety          |
+
+---
+
+## 📂 Project Structure (truncated)
+
+```txt
+src/
+ ├─ assets/                 # images, logo
+ ├─ components/
+ │   ├─ Config/             # RoleConfigForm wizard
+ │   ├─ NicknameForm/
+ │   ├─ Wheel/              # Loader (spinning ring)
+ │   └─ Results/
+ ├─ constants/              # roles & agent lists
+ ├─ store/                  # Zustand gameStore.ts
+ ├─ utils/                  # shuffle, pickUniqueAgent
+ ├─ App.tsx                 # routes scenes via AnimatePresence
+ └─ styles/                 # reset.css
+```
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone
+$ git clone https://github.com/Enver-Onur-Cogalan/React-valorant-random.git
+$ cd valorant-draft-wheel
+
+# 2. Install deps
+$ npm install   
+
+# 3. Run dev server
+$ npm run dev     
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo & create your branch: `git checkout -b feature/name`
+2. Commit your changes: `git commit -am "feat: ..."`
+3. Push & open a Pull Request
