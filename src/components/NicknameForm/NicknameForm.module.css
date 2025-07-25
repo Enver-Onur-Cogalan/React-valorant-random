@@ -1,0 +1,84 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.25rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Headers */
+.title {
+    font-size: 5rem;
+    font-weight: 700;
+
+    background: linear-gradient(135deg, #0f0f17 0%, #e11d48 60%, #0f0f17 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fafaf9;
+}
+
+/* Form */
+.form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input */
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 12px;
+
+    border: 2px solid #272433;
+    border-radius: 8px;
+    background: #1e1b2d;
+    color: #e4e4e7;
+    font-size: 1rem;
+
+    outline: none;
+}
+
+.input::placeholder {
+    color: #6b7280;
+}
+
+/* Error message */
+.error {
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: #f87171;
+}
+
+/* Button */
+.button {
+    margin-top: 32px;
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: #d32f2f;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    transition: background .2s;
+}
+
+.button:hover {
+    background: #b91c1c;
+}

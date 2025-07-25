@@ -1,0 +1,15 @@
+/* Full screen container */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  background: linear-gradient(135deg, #0b0b0d 0%, #2a0108ff 50%, #0b0b0d 100%);
+  background-attachment: fixed;
+
+  color: #e4e4e7;
+}

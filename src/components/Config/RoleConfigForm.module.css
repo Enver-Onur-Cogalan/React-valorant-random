@@ -1,0 +1,73 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e11d48;
+}
+
+.slider {
+    width: 260px;
+}
+
+.flexInfo {
+    font-weight: 600;
+}
+
+.toggle {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.role {
+    font-weight: 500;
+}
+
+.count {
+    color: #e11d48;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.controls {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.controls button {
+    width: 28px;
+    height: 28px;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: .75rem 2rem;
+    border-radius: 8px;
+    border: none;
+    background: #e11d48;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn :disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #f87171;
+}
